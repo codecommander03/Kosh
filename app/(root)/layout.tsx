@@ -1,4 +1,5 @@
-import SiderBar from "@/components/SiderBar";
+import MobileNav from "@/components/MobileNav";
+import SiderBar from "@/components/SideBar";
 import Image from "next/image";
 
 export default function Layout({
@@ -19,10 +20,12 @@ export default function Layout({
                         height={30}
                         alt="menu icon"
                     />
-                    <div></div>
+                    <div>
+                        <MobileNav user={loggedIn} />
+                    </div>
                 </div>
+                {children}
             </div>
-            {children}
         </main>
     );
 }

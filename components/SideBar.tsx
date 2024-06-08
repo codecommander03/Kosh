@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
 
-const SiderBar = ({ user }: SiderbarProps) => {
+const SideBar = ({ user }: SiderbarProps) => {
     const pathName = usePathname();
     return (
         <section className='sidebar'>
@@ -54,4 +54,4 @@ const SiderBar = ({ user }: SiderbarProps) => {
     )
 }
 
-export default SiderBar
+export default SideBar
